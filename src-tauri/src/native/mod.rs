@@ -1,0 +1,5 @@
+//! Windows-specific system integration.
+
+pub mod capture;
+pub mod clipboard;
+pub mod ocr;

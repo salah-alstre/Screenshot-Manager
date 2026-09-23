@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5B86FF"/>
+      <stop offset="1" stop-color="#2F4FE0"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="front">
+      <rect x="262" y="372" width="440" height="332" rx="46"/>
+    </clipPath>
+  </defs>
+  <rect x="32" y="32" width="960" height="960" rx="224" fill="url(#bg)"/>
+  <rect x="32" y="32" width="960" height="960" rx="224" fill="url(#sheen)"/>
+  <!-- viewfinder corners -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="58" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M168 318 V218 a50 50 0 0 1 50 -50 H318"/>
+    <path d="M706 168 H806 a50 50 0 0 1 50 50 V318"/>
+    <path d="M856 706 V806 a50 50 0 0 1 -50 50 H706"/>
+    <path d="M318 856 H218 a50 50 0 0 1 -50 -50 V706"/>
+  </g>
+  <!-- library stack -->
+  <rect x="334" y="300" width="440" height="332" rx="46" fill="#FFFFFF" fill-opacity="0.42"/>
+  <rect x="262" y="372" width="440" height="332" rx="46" fill="#FFFFFF"/>
+  <g clip-path="url(#front)">
+    <circle cx="384" cy="482" r="40" fill="#3A5CF0"/>
+    <path d="M232 720 L420 548 L520 640 L590 578 L740 720 Z" fill="#3A5CF0"/>
+  </g>
+</svg>
